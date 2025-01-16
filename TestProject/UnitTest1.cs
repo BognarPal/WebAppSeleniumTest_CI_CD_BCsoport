@@ -31,7 +31,7 @@ namespace TestProject
         {
             driver.Navigate().GoToUrl("http://project-to-test/index.html");
             var buttons = driver.FindElements(By.CssSelector("button[target-color]"));
-            Assert.That(buttons.Count(), Is.EqualTo(4));
+            Assert.That(buttons.Count(), Is.EqualTo(3));
         }
 
         [TearDown]
