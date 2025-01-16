@@ -1,0 +1,13 @@
+services: 
+    project-to-test:
+        build: .
+        ports:
+            - 8001:80
+
+    selenium-chrome:
+        image: selenium/standalone-chrome:131.0.6778.204
+        shm_size: 2gb
+        ports:
+            - 4444:4444
+            - 7900:7900
+            
